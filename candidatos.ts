@@ -1,17 +1,16 @@
 
-
 class lista_candidatos{
     nombre_partido: string
     num_lista: number
     presidente: string
-    visepresidente: string
+    vicepresidente: string
     
 
-    constructor(nombre_partido:string,num_lista:number,presidente:string,visepresidente:string){
+    constructor(nombre_partido:string,num_lista:number,presidente:string,vicepresidente:string){
         this.nombre_partido=nombre_partido
         this.num_lista=num_lista
         this.presidente=presidente
-        this.visepresidente=visepresidente}
+        this.vicepresidente=vicepresidente}
 
         asignar_voto(pers:Votante):void{
             const num_lista=this.num_lista
@@ -22,7 +21,7 @@ class lista_candidatos{
                 `Nombre del partido: ${this.nombre_partido}
         Numero de lista: ${this.num_lista}
         Presidente: ${this.presidente}
-        Visepresidente: ${this.visepresidente}
+        Vicepresidente: ${this.vicepresidente}
         `)}}
 
 class Votante{
@@ -61,15 +60,15 @@ class votos{
         else{console.log(`Voto: Lista N°${this.voto}
         `)}}}
 
-const pers_1= new Votante(63476670,"gaston",0)
-const pers_2= new Votante(73545423,"manuel",0)
-const pers_3= new Votante(52688608,"luataro",0)
-const pers_4= new Votante(18945532,"maxi",0)
+const pers_1= new Votante(35052890,"Gastón",0)
+const pers_2= new Votante(33528663,"Manuel",0)
+const pers_3= new Votante(15895223,"Lautaro",0)
+const pers_4= new Votante(22587124,"Maximiliano",0)
 const lista_votantes: Votante[]=[pers_1,pers_2,pers_3,pers_4]
 
-const lista_electoral1= new lista_candidatos("Peronista",125,"Pablo Vargas","Raul Salinas")
-const lista_electoral2= new lista_candidatos("Radicales",140,"Juan Romero","Julian Alvarez")
-const lista_electoral3= new lista_candidatos("Socialistas",532,"Juan Perez","Cristian Medina")
+const lista_electoral1= new lista_candidatos("Unión por la Patria",125,"Pablo Vargas","Raul Salinas")
+const lista_electoral2= new lista_candidatos("Juntos por el Cambio",140,"Juan Romero","Julian Alvarez")
+const lista_electoral3= new lista_candidatos("La Libertad Avanza",532,"Juan Perez","Cristian Medina")
 const vector_electoral: lista_candidatos[]=[lista_electoral1,lista_electoral2,lista_electoral3]
 
 vector_electoral.forEach(objeto => {
