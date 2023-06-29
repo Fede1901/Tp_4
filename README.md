@@ -1,4 +1,2 @@
 # Integrantes:
-Alexis Laffont
-Federico Oyola
-Franco Pereira
+Alexis Laffont, Federico Oyola y Franco Pereira
